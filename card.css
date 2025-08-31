@@ -1,0 +1,64 @@
+body{
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#container{
+    background-color: whitesmoke;
+    height: 700px;
+    width: 385px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    animation: fade-animate 2s linear 0s 1 ;
+}
+#image{
+    height: 350px;
+    width: 370px;
+    margin-top: 7px;
+    align-self: center; 
+    background-image: url("nature_1.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+.text{
+    width: 70px;
+    margin-top: 20px;
+    margin-left: 20px;
+    border: 1px solid rgb(180, 180, 180) ;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 600;
+    color: grey;
+    text-align: center;
+    display:inline-block;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+}
+#heading{
+    margin-left : 20px;
+    font-size: 25px;
+}
+.read{
+    text-align: center;
+}
+#more{
+    border-radius: 20px;
+    border: none;
+    background-color: skyblue;
+    color: rgb(16, 132, 177);
+    height:30px;
+    width: 80px;
+}
+@keyframes fade-animate{
+    from{
+        transform: translateY(1000px);
+    }
+    to{
+        transform: translateY(0px);
+    }
+}
